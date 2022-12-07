@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         edt_religion=findViewById(R.id.edt_religion);
         edt_status=findViewById(R.id.edt_status);
         edt_language=findViewById(R.id.edt_language);
-        edt_hobbies=findViewById(R.id.edt_hobbies);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 String religion=edt_religion.getText().toString();
                 String status=edt_status.getText().toString();
                 String language=edt_language.getText().toString();
-                String hobbies=edt_hobbies.getText().toString();
+
 
                 Intent intent = new Intent(MainActivity.this,SecondaryActivity.class);
                 intent.putExtra("name",name);
@@ -58,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("religion",religion);
                 intent.putExtra("status",status);
                 intent.putExtra("language",language);
-                intent.putExtra("hobbies",hobbies);
                 startActivity(intent);
 
             }
