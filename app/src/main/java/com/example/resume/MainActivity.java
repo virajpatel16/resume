@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     Button btn;
     EditText
-   edt_name,edt_bob,edt_father,edt_sex,edt_address,edt_email,edt_contact,edt_nation,edt_religion,edt_status,edt_language,edt_hobbies;
+   edt_name,edt_dob,edt_father,edt_sex,edt_address,edt_email,edt_contact,edt_nation,edt_religion,edt_status,edt_language,edt_hobbies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btn =findViewById(R.id.btn);
         edt_name=findViewById(R.id.edt_name);
-        edt_bob=findViewById(R.id.edt_dob);
+        edt_dob=findViewById(R.id.edt_dob);
         edt_father=findViewById(R.id.edt_father);
         edt_sex=findViewById(R.id.edt_sex);
         edt_address=findViewById(R.id.edt_address);
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name=edt_name.getText().toString();
-                String dob=edt_bob.getText().toString();
+                String dob=edt_dob.getText().toString();
                 String father=edt_father.getText().toString();
                 String sex=edt_sex.getText().toString();
                 String address=edt_address.getText().toString();

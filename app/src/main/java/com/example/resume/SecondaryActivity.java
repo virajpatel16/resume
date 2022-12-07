@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 public class SecondaryActivity extends AppCompatActivity {
 
-    TextView name,Dob,father,address,status,hobbies,language,religion,nation,email,contact,sex;
+    TextView name,dob,father,address,status,hobbies,language,religion,nation,email,contact,sex;
 
 
     @Override
@@ -19,7 +19,7 @@ public class SecondaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_secondary);
 
         name=findViewById(R.id.name);
-        Dob=findViewById(R.id.dob);
+        dob=findViewById(R.id.dob);
         father=findViewById(R.id.father);
         address=findViewById(R.id.address);
         status=findViewById(R.id.status);
@@ -33,7 +33,7 @@ public class SecondaryActivity extends AppCompatActivity {
 
 
         String Name = getIntent().getStringExtra("name");
-        String dob = getIntent().getStringExtra("dob");
+        String Dob = getIntent().getStringExtra("dob");
         String Father = getIntent().getStringExtra("father");
         String Sex = getIntent().getStringExtra("sex");
         String Address = getIntent().getStringExtra("address");
@@ -48,7 +48,7 @@ public class SecondaryActivity extends AppCompatActivity {
 
 
         name.setText(""+Name);
-        Dob.setText(""+Dob);
+        dob.setText(""+Dob);
         father.setText(""+Father);
         sex.setText(""+Sex);
         address.setText(""+Address);
